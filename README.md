@@ -131,7 +131,7 @@ We then prepared the data for model training by converting categorical variables
   13
 The code uses the pd.get_dummies() function to create dummy variables for categorical features in the datagram. The resulting Data Frame, df1, has a binary column for each unique category in each categorical feature. The drop_first=True argument specifies that one of the binary columns for each feature is dropped to avoid the issue of collinearity between the binary features.
 The resulting data frame, df1, is then used to create the predictor variable (X) and the response variable (y) for model training. The predictor variable X contains all the columns of df1 except the response variable (y). The response variable y contains the binary outcome of the campaign, with a value of 1 indicating that the client subscribed to the term deposit and 0 indicating that they did not.
-#Head of the new data frame:
+
 Feature Selection:
 To select the most important features for our machine learning model, we used the ExtraTreesClassifier algorithm, an ensemble method that fits multiple randomized decision trees and combines their predictions to improve accuracy and reduce overfitting. In this code, the ExtraTreesClassifier is fit on the predictor variable X and the response variable y using 100 estimators.
 Next, the SelectFromModel function from scikit-learn is used to select the most important features from the fitted ExtraTreesClassifier. The SelectFromModel function selects the features that have a greater importance score than the mean importance score. The selected features are stored in X_new.
@@ -139,6 +139,7 @@ Then split the dataset into training and testing sets using the train_test_split
 Overall, we prepared the dataset for model training and evaluation by splitting it into training and testing subsets.
 Here, we realized the features that have more impact on the predictive outcomes of the models are
 Age, Duration of last contact, campaign, emp.var.rate, cons.conf.idx, euribor3m, nr.employed, housing_yes, loan_yes, poutcome_success
+
 SMOTE(Synthetic Minority Oversampling Technique)
 As we know that target variable was imbalanced, with only 11.3% of instances belonging to the positive class. This made us use the SMOTE technique to balance the data.
 The SMOTE algorithm (Synthetic Minority Oversampling Technique) is a data sampling technique that is used to address the issue of class imbalance. SMOTE works by generating synthetic instances of the minority class by identifying nearest neighbors and randomly sampling in the feature space.
