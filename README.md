@@ -67,3 +67,24 @@ y - has the client subscribed to a term deposit? (Binary: 'yes', 'no')Potential 
 
 The target variable is whether the client subscribed to the term deposit. This variable is represented by the "y" column
 in the dataset, which takes on a value of "yes" or "no".
+
+
+## EXPLORATORY DATA ANALYSIS
+To understand the data, we performed below statistical analysis:
+
+1. Checking the data distribution of each Continuous variable:
+
+
+By creating a histogram for each variable in the dataset, we can quickly identify any patterns or anomalies in the data.
+
+<img width="1037" alt="Screenshot 2024-05-31 at 8 20 03 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/1bd1dd7c-881b-4692-80b7-40a3c1a5dff8">
+
+
+2. Boxplot
+
+<img width="957" alt="Screenshot 2024-05-31 at 8 20 57 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/19811a29-58e1-4ff7-ab69-6afed06f179d">
+
+3. Heatmap
+
+<img width="1007" alt="Screenshot 2024-05-31 at 8 21 56 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/9170aeed-2d2f-4188-b617-6ecb2ba33916">
+
