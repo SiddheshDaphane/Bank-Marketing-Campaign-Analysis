@@ -96,3 +96,31 @@ To understand distribution of data performed below actions
   <img width="903" alt="Screenshot 2024-05-31 at 8 23 03 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/f79d373d-1962-4d8a-9a38-b26ee3da680d">
 
 
+2. Count plot of the contact column:
+
+<img width="956" alt="Screenshot 2024-05-31 at 8 24 12 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/8ff5155d-c633-4e68-9fc7-937626183545">
+
+3. Count plot of the loan column
+
+<img width="967" alt="Screenshot 2024-05-31 at 8 24 48 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/1eeb5700-14b2-4038-b1cb-5d7c05b6e2ba">
+
+4. Clients with or without credit in default
+
+<img width="949" alt="Screenshot 2024-05-31 at 8 25 26 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/0f5f7d3b-dc31-47de-8a03-2ccd4d8afc1b">
+
+5. Clients with housing loan/or not
+
+   <img width="809" alt="Screenshot 2024-05-31 at 8 26 08 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/77c265cc-089d-4584-94e8-4a9448d11990">
+
+6. Data Distribution of Target variable
+
+<img width="1027" alt="Screenshot 2024-05-31 at 8 26 43 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/bf416fc4-81b2-4d63-b3f6-a00db22dd56b">
+
+7. Class Distribution of Term Deposit Subscription: Addressing Imbalanced Data with SMOTE
+
+<img width="830" alt="Screenshot 2024-05-31 at 8 27 17 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/2c1485f1-ca2b-4cf6-ac2c-88b90024f165">
+
+8. Bar plot which shows client subscribed a term deposit or not?
+
+<img width="967" alt="Screenshot 2024-05-31 at 8 27 50 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/85940e64-70ed-45c4-a050-6c40d39b749f">
+
