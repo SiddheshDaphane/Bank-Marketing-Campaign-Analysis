@@ -88,3 +88,11 @@ By creating a histogram for each variable in the dataset, we can quickly identif
 
 <img width="1007" alt="Screenshot 2024-05-31 at 8 21 56 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/9170aeed-2d2f-4188-b617-6ecb2ba33916">
 
+
+To understand distribution of data performed below actions
+
+1. Distribution of the different education levels of the clients in the dataset:
+
+  <img width="903" alt="Screenshot 2024-05-31 at 8 23 03 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/f79d373d-1962-4d8a-9a38-b26ee3da680d">
+
+
