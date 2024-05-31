@@ -50,12 +50,20 @@ dataset has 21 features and 41211 rows which include information as below:
 • • • • • • • •
 
 Age (numeric): the age of the client
+
 Job (type of job): the type of job the client has
+
 Marital (married/divorced/single): the marital status of the client
+
 Education (unknown, secondary, primary, tertiary): the education level of the client
+
 Housing: whether the client has a housing loan or not
+
 Loan: whether the client has a personal loan or not
+
 Duration: the duration of the last contact, in seconds
+
 y - has the client subscribed to a term deposit? (Binary: 'yes', 'no')Potential targets
+
 The target variable is whether the client subscribed to the term deposit. This variable is represented by the "y" column
 in the dataset, which takes on a value of "yes" or "no".
