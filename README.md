@@ -128,11 +128,11 @@ To understand distribution of data performed below actions
 
 Preparing Bank Marketing Campaign Data for Machine Learning: Creating Dummy Variables and Predictor/Response Variables.
 We then prepared the data for model training by converting categorical variables to binary features and creating predictor and response variables.
-  13
 The code uses the pd.get_dummies() function to create dummy variables for categorical features in the datagram. The resulting Data Frame, df1, has a binary column for each unique category in each categorical feature. The drop_first=True argument specifies that one of the binary columns for each feature is dropped to avoid the issue of collinearity between the binary features.
 The resulting data frame, df1, is then used to create the predictor variable (X) and the response variable (y) for model training. The predictor variable X contains all the columns of df1 except the response variable (y). The response variable y contains the binary outcome of the campaign, with a value of 1 indicating that the client subscribed to the term deposit and 0 indicating that they did not.
 
-Feature Selection:
+**Feature Selection:**
+
 To select the most important features for our machine learning model, we used the ExtraTreesClassifier algorithm, an ensemble method that fits multiple randomized decision trees and combines their predictions to improve accuracy and reduce overfitting. In this code, the ExtraTreesClassifier is fit on the predictor variable X and the response variable y using 100 estimators.
 Next, the SelectFromModel function from scikit-learn is used to select the most important features from the fitted ExtraTreesClassifier. The SelectFromModel function selects the features that have a greater importance score than the mean importance score. The selected features are stored in X_new.
 Then split the dataset into training and testing sets using the train_test_split function from scikit-learn. The function splits the X_new and y variables into training and testing subsets with a 75:25 split ratio. The stratify parameter ensures that the class distribution is preserved in the split, and the random_state parameter ensures reproducibility of the results.
@@ -140,9 +140,12 @@ Overall, we prepared the dataset for model training and evaluation by splitting 
 Here, we realized the features that have more impact on the predictive outcomes of the models are
 Age, Duration of last contact, campaign, emp.var.rate, cons.conf.idx, euribor3m, nr.employed, housing_yes, loan_yes, poutcome_success
 
-SMOTE(Synthetic Minority Oversampling Technique)
+**SMOTE(Synthetic Minority Oversampling Technique)**
+
 As we know that target variable was imbalanced, with only 11.3% of instances belonging to the positive class. This made us use the SMOTE technique to balance the data.
 The SMOTE algorithm (Synthetic Minority Oversampling Technique) is a data sampling technique that is used to address the issue of class imbalance. SMOTE works by generating synthetic instances of the minority class by identifying nearest neighbors and randomly sampling in the feature space.
 In this study, the SMOTE algorithm was implemented using the imbalanced-learn package in Python. The SMOTE algorithm was initialized with a sampling strategy of 'auto' and a random state of 42. The fit_resample() method of the SMOTE object was then called to apply the SMOTE algorithm to the training set, which consisted of the input features X_train and the target variable y_train.
-The results of applying the SMOTE algorithm to the training set are shown in the following figure. The figure shows the distribution of the target variable in the original training set and the oversampled training set.
+The results of applying the SMOTE algorithm to the training set are shown in the following figure. The figure shows the distribution of the target variable in the original training set and the oversampled training set. As can be seen from the figure, the distribution of the target variable in the oversampled training set is much more balanced than the distribution of the target variable in the original training set. This suggests that the SMOTE algorithm was successful in mitigating the issue of class imbalance in the training set.
+The results of this study suggest that the SMOTE algorithm is an effective way to address the issue of class imbalance in binary classification datasets. The SMOTE algorithm can be used to generate synthetic instances of the minority class, which can help to improve the performance of machine learning models on imbalanced datasets.
+
  
