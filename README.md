@@ -154,3 +154,32 @@ The results of this study suggest that the SMOTE algorithm is an effective way t
 Here we have used StandardScaler class from the scikit-learn library for feature scaling. It was an important preprocessing step in machine learning that ensures all input features are on the same scale, which can improve the performance of some machine learning algorithms.
 In this code, the StandardScaler class is imported from the scikit-learn preprocessing module. Then, two StandardScaler objects are instantiated for the training and test data, respectively. The fit_transform() method is called on the training data StandardScaler object to fit the scaler to the data and then transform the data. The transform() method is called on the test data StandardScaler object to transform the test data using the mean and standard deviation learned from the training data.
 The resulting scaled data can be used for machine learning modeling.
+
+## Models
+
+<img width="1078" alt="Screenshot 2024-05-31 at 8 32 41 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/8173e430-57d5-4ab2-b70f-1b9124dee561">
+
+
+<img width="1084" alt="Screenshot 2024-05-31 at 8 33 09 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/de836ff7-5dbc-4d1f-8ef4-3956edf69f37">
+
+
+<img width="1079" alt="Screenshot 2024-05-31 at 8 33 33 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/ec6649a4-68e8-44fa-a366-a858efc25fb4">
+
+
+<img width="1083" alt="Screenshot 2024-05-31 at 8 33 54 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/301212c9-7bd5-4f6b-9b13-e32f06463452">
+
+
+<img width="1089" alt="Screenshot 2024-05-31 at 8 34 15 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/07603e3f-2c4d-4dff-a49d-dffdd517cd1a">
+
+
+<img width="1080" alt="Screenshot 2024-05-31 at 8 34 50 AM" src="https://github.com/SiddheshDaphane/Bank-Marketing-Campaign-Analysis/assets/105710898/d93d6203-24e2-4f5a-a150-8d4d553d6dfc">
+
+
+## Conclusions
+• Based on the results, it can be concluded that increasing the number of features in the training and prediction process did not improve the model's ability to predict Class 1 (customers enrolling for a term deposit). This suggests that adding more features may not be the optimal approach to improve the model's performance. Instead, implementing penalties or reducing the number of features could be explored further.
+
+• Logistic regression exhibited the highest probability of predicting Class 1, with a precision score of 0.83. In contrast, decision tree and KNN showed the lowest probability, with a score of 0.52. This discrepancy could be attributed to the imbalanced distribution of Class 0 and Class 1 in the dataset.
+
+• Thus, based on the results, it can be concluded that logistic regression is the better model for predicting the likelihood of a customer enrolling for a term deposit. However, further optimization and fine-tuning of the model can be explored to enhance its predictive capabilities.
+
+• For the feature selection we used ExtraTreesClassifier library through which we selected values above some threshold (default mean ) from age,duration,campaign,emp.var.rate, cons.conf.idx, euribor3m, nr.employed ,housing_yes, loan_yes, poutcome_success. By using this feature, we trained our model and predicted our values After this the prediction of probability of class 0 is more than prob of class 1. This can be happened due to the unbalanced data or out countered by decreasing number of features or else adding penalties to decrease the magnitude of features.
