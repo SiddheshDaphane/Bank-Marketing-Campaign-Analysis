@@ -148,4 +148,9 @@ In this study, the SMOTE algorithm was implemented using the imbalanced-learn pa
 The results of applying the SMOTE algorithm to the training set are shown in the following figure. The figure shows the distribution of the target variable in the original training set and the oversampled training set. As can be seen from the figure, the distribution of the target variable in the oversampled training set is much more balanced than the distribution of the target variable in the original training set. This suggests that the SMOTE algorithm was successful in mitigating the issue of class imbalance in the training set.
 The results of this study suggest that the SMOTE algorithm is an effective way to address the issue of class imbalance in binary classification datasets. The SMOTE algorithm can be used to generate synthetic instances of the minority class, which can help to improve the performance of machine learning models on imbalanced datasets.
 
- 
+
+**Feature Scaling**
+
+Here we have used StandardScaler class from the scikit-learn library for feature scaling. It was an important preprocessing step in machine learning that ensures all input features are on the same scale, which can improve the performance of some machine learning algorithms.
+In this code, the StandardScaler class is imported from the scikit-learn preprocessing module. Then, two StandardScaler objects are instantiated for the training and test data, respectively. The fit_transform() method is called on the training data StandardScaler object to fit the scaler to the data and then transform the data. The transform() method is called on the test data StandardScaler object to transform the test data using the mean and standard deviation learned from the training data.
+The resulting scaled data can be used for machine learning modeling.
